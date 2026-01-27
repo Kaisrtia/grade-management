@@ -6,6 +6,5 @@ internal class Program {
     System.Console.WriteLine (admin.role);
     Course math = new Course ("1", "Math");
     System.Console.WriteLine ($"Course ID: {math.id}, Course Name: {math.name}");
-    
   }
 }

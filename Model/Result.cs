@@ -19,9 +19,9 @@
       set { _grade = value; }
     }
 
-    Result () { }
+    public Result () { }
 
-    Result(string Sid, string Cid, float grade) {
+    public Result(string Sid, string Cid, float grade) {
       _Sid = Sid;
       _Cid = Cid;
       _grade = grade;
