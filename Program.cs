@@ -1,10 +1,23 @@
 ﻿using GradeManagement.Model;
 using GradeManagement.Service;
-internal class Program {
-  private static void Main (string[] args) {
-    Admin admin = new Admin ();
-    System.Console.WriteLine (admin.role);
-    Course math = new Course ("1", "Math");
-    System.Console.WriteLine ($"Course ID: {math.id}, Course Name: {math.name}");
+using GradeManagement.Config;
+using MySql.Data.MySqlClient;
+using GradeManagement.Repository;
+using System.Windows.Forms; // Add this for WinForms
+
+namespace GradeManagement // Namespace is usually recommended for WinForms
+{
+  internal static class Program
+  {
+    /// <summary>
+    ///  The main entry point for the application.
+    /// </summary>
+    [STAThread] // Required for WinForms
+    static void Main()
+    {
+      Application.EnableVisualStyles();
+      Application.SetCompatibleTextRenderingDefault(false);
+      Application.Run(new MainForm());
+    }
   }
 }

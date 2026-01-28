@@ -77,7 +77,16 @@ namespace GradeManagement.Repository
         {
           foreach (var prop in properties)
           {
-            cmd.Parameters.AddWithValue("@" + prop.Name, prop.GetValue(entity) ?? DBNull.Value);
+            var value = prop.GetValue(entity)!;
+
+            if (prop.PropertyType.IsEnum) // change to string if enum type
+            {
+              cmd.Parameters.AddWithValue("@" + prop.Name, value.ToString());
+            }
+            else
+            {
+              cmd.Parameters.AddWithValue("@" + prop.Name, value ?? DBNull.Value);
+            }
           }
           return await cmd.ExecuteNonQueryAsync();
         }

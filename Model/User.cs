@@ -1,49 +1,41 @@
-﻿namespace GradeManagement.Model {
-  enum Role {
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace GradeManagement.Model
+{
+  enum Role
+  {
     ADMIN,
     FMANAGER,
     STUDENT
   }
-  internal class User {
-    protected string _id;
-    protected string _name;
-    protected string _username;
-    protected string _password;
-    protected Role _role;
+  internal class User
+  {
+    [Required(ErrorMessage = "ID cannot be empty")]
+    [StringLength(50, MinimumLength = 1)]
+    public string id { get; set; }
 
-    public string id {
-      get { return _id; }
-      set { _id = value; }
-    }
+    [Required(ErrorMessage = "Name cannot be empty")]
+    [StringLength(50, MinimumLength = 1)]
+    public string name { get; set; }
 
-    public string name {
-      get { return _name; }
-      set { _name = value; }
-    }
+    [Required(ErrorMessage = "Username cannot be empty and at least 5 characters")]
+    [StringLength(50, MinimumLength = 5)]
+    public string username { get; set; }
 
-    public string username {
-      get { return _username; }
-      set { _username = value; }
-    }
-
-    public string password {
-      get { return _password; }
-      set { _password = value; }
-    }
-
-    public Role role {
-      get { return _role; }
-      set { _role = value; }
-    }
+    [Required(ErrorMessage = "Password cannot be empty and at least 5 characters")]
+    [StringLength(50, MinimumLength = 5)]
+    public string password { get; set; }
+    public Role role { get; set; }
 
     public User() { }
 
-    public User (string id, string name, string username, string password, Role role) {
-      _id = id;
-      _name = name;
-      _username = username;
-      _password = password;
-      _role = role;
+    public User(string _id, string _name, string _username, string _password, Role _role)
+    {
+      id = _id;
+      name = _name;
+      username = _username;
+      password = _password;
+      role = _role;
     }
   }
 }
