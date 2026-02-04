@@ -1,4 +1,4 @@
-﻿using GradeManagement.Model;
+﻿using GradeManagement.Entity;
 
 namespace GradeManagement.RepositoryInterface {
   internal interface IUserRepository : IBaseRepository<User> {

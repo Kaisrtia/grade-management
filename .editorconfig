@@ -1,0 +1,25 @@
+﻿# 1. Cài đặt chung cho mọi file (Tab size = 2)
+[*]
+indent_style = space
+indent_size = 2
+tab_width = 2
+
+# 2. Cài đặt cho C# (Không xuống dòng khi mở ngoặc nhọn)
+[*.cs]
+# Đặt tất cả các kiểu ngoặc về "none" để không tự động xuống dòng
+csharp_new_line_before_open_brace = none
+csharp_new_line_before_else = false
+csharp_new_line_before_catch = false
+csharp_new_line_before_finally = false
+csharp_new_line_before_members_in_object_initializers = false
+csharp_new_line_before_members_in_anonymous_types = false
+
+# 3. Cài đặt cho C++ (Nếu bạn dùng C++)
+[*.{cpp,h,hpp,c}]
+indent_size = 2
+cpp_indent_braces = false
+# same_line: Giữ ngoặc trên cùng một dòng
+cpp_new_line_before_open_brace_namespace = same_line
+cpp_new_line_before_open_brace_type = same_line
+cpp_new_line_before_open_brace_function = same_line
+cpp_new_line_before_open_brace_block = same_line

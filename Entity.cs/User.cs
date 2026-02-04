@@ -1,15 +1,19 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
-namespace GradeManagement.Model
+namespace GradeManagement.Entity
 {
-  enum Role
+  public enum Role
   {
     ADMIN,
     FMANAGER,
     STUDENT
   }
-  internal class User
+  
+  [Table("user")]
+  public class User
   {
+    [Key]
     [Required(ErrorMessage = "ID cannot be empty")]
     [StringLength(50, MinimumLength = 1)]
     public string id { get; set; }

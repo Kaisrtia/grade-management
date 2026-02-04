@@ -1,4 +1,4 @@
-﻿using GradeManagement.Model;
+﻿using GradeManagement.Entity;
 using GradeManagement.RepositoryInterface;
 using GradeManagement.ServiceInterface;
 

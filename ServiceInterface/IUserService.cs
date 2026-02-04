@@ -1,4 +1,4 @@
-﻿using GradeManagement.Model;
+﻿using GradeManagement.Entity;
 using System.Threading.Tasks;
 
 namespace GradeManagement.ServiceInterface {
