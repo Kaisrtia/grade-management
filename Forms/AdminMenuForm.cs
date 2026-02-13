@@ -109,8 +109,11 @@ namespace GradeManagement.Forms
       var btnUsers = CreateMenuButton("👤 Create Users", 210);
       btnUsers.Click += (s, e) => ShowUserManagementPanel();
 
+      var btnFaculty = CreateMenuButton("🏢 Faculties", 260);
+      btnFaculty.Click += (s, e) => ShowFacultyPanel();
+
       // Add controls to sidebar
-      pnlSidebar.Controls.AddRange(new Control[] { lblWelcome, btnCourses, btnEnroll, btnImport, btnUsers, btnLogout });
+      pnlSidebar.Controls.AddRange(new Control[] { lblWelcome, btnCourses, btnEnroll, btnImport, btnUsers, btnFaculty, btnLogout });
 
       // Add panels to form
       this.Controls.Add(pnlContent);
@@ -585,22 +588,47 @@ namespace GradeManagement.Forms
         lblStudentSection, lblStudentName, txtStudentName, lblStudentUsername, txtStudentUsername, lblStudentPassword, txtStudentPassword, lblStudentFaculty, cmbStudentFaculty, btnCreateStudent
       });
 
-      // Faculty Management Section (at the bottom)
+      // Load faculties
+      var faculties = await _controller.GetAllFaculties();
+      foreach (var faculty in faculties)
+      {
+        cmbFMFaculty.Items.Add(new FacultyItem { Id = faculty.id, Name = faculty.name });
+        cmbStudentFaculty.Items.Add(new FacultyItem { Id = faculty.id, Name = faculty.name });
+      }
+    }
+
+    #endregion
+
+    #region Faculty Management Panel
+
+    private async void ShowFacultyPanel()
+    {
+      pnlContent.Controls.Clear();
+
+      var lblTitle = new Label
+      {
+        Text = "Faculty Management",
+        Location = new Point(0, 0),
+        Size = new Size(400, 30),
+        Font = new Font("Segoe UI", 14, FontStyle.Bold)
+      };
+
+      // Faculty Management Section
       var lblFacultySection = new Label
       {
         Text = "Create Faculty",
-        Location = new Point(0, 280),
+        Location = new Point(0, 50),
         Size = new Size(300, 25),
         Font = new Font("Segoe UI", 12, FontStyle.Bold)
       };
 
-      var lblFacultyName = new Label { Text = "Faculty Name:", Location = new Point(0, 315), Size = new Size(100, 25) };
-      var txtFacultyName = new TextBox { Location = new Point(110, 315), Size = new Size(400, 25) };
+      var lblFacultyName = new Label { Text = "Faculty Name:", Location = new Point(0, 85), Size = new Size(100, 25) };
+      var txtFacultyName = new TextBox { Location = new Point(110, 85), Size = new Size(400, 25) };
 
       var btnCreateFaculty = new Button
       {
         Text = "Create Faculty",
-        Location = new Point(110, 350),
+        Location = new Point(110, 120),
         Size = new Size(150, 35),
         BackColor = Color.FromArgb(0, 120, 215),
         ForeColor = Color.White,
@@ -622,16 +650,7 @@ namespace GradeManagement.Forms
         {
           MessageBox.Show(result.message, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
           txtFacultyName.Clear();
-          
-          // Refresh faculty dropdowns
-          var faculties = await _controller.GetAllFaculties();
-          cmbFMFaculty.Items.Clear();
-          cmbStudentFaculty.Items.Clear();
-          foreach (var faculty in faculties)
-          {
-            cmbFMFaculty.Items.Add(new FacultyItem { Id = faculty.id, Name = faculty.name });
-            cmbStudentFaculty.Items.Add(new FacultyItem { Id = faculty.id, Name = faculty.name });
-          }
+          // No need to refresh dropdowns here as they are in different panels now
         }
         else
         {
@@ -639,15 +658,9 @@ namespace GradeManagement.Forms
         }
       };
 
-      pnlContent.Controls.AddRange(new Control[] { lblFacultySection, lblFacultyName, txtFacultyName, btnCreateFaculty });
+      pnlContent.Controls.AddRange(new Control[] { lblTitle, lblFacultySection, lblFacultyName, txtFacultyName, btnCreateFaculty });
 
-      // Load faculties
-      var faculties = await _controller.GetAllFaculties();
-      foreach (var faculty in faculties)
-      {
-        cmbFMFaculty.Items.Add(new FacultyItem { Id = faculty.id, Name = faculty.name });
-        cmbStudentFaculty.Items.Add(new FacultyItem { Id = faculty.id, Name = faculty.name });
-      }
+
     }
 
     #endregion

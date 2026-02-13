@@ -42,8 +42,7 @@ namespace GradeManagement
             mainForm = new MainForm(loggedInUser);
             break;
           case Role.STUDENT:
-            // TODO: Create StudentMenuForm
-            mainForm = new MainForm(loggedInUser);
+            mainForm = new StudentMenuForm(loggedInUser);
             break;
           default:
             mainForm = new MainForm(loggedInUser);

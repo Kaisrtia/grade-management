@@ -25,7 +25,7 @@ namespace GradeManagement.Entity
     public string username { get; set; }
 
     [Required(ErrorMessage = "Password cannot be empty and at least 5 characters")]
-    [StringLength(100, MinimumLength = 5)]  // Changed from 50 to 100 to accommodate BCrypt hashes (60 chars)
+    [StringLength(100, MinimumLength = 5)] 
     public string password { get; set; }
     public Role role { get; set; }
 

@@ -50,6 +50,7 @@ namespace GradeManagement.Repository
 
     public async Task<int> update(T entity)
     {
+      ValidateEntity(entity);
       _dbSet.Update(entity);
       return await _context.SaveChangesAsync();
     }

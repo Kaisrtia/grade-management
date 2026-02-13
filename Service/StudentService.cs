@@ -1,4 +1,5 @@
-﻿using GradeManagement.DTO.Response;
+﻿using GradeManagement.DTO.Request;
+using GradeManagement.DTO.Response;
 using GradeManagement.Entity;
 using GradeManagement.RepositoryInterface;
 using GradeManagement.ServiceInterface;
@@ -28,6 +29,28 @@ namespace GradeManagement.Service {
 
       // Map to DTOs
       return results.Select(r => new ResultResponseDTO(r)).ToList();
+    }
+
+    public async Task<bool> updateStudent(UserChangeInfoRequestDTO request) {
+      var student = await studentRepository.getById(request.id);
+      if (student == null) {
+        throw new ArgumentException($"Student with ID '{request.id}' does not exist");
+      }
+
+      student.name = request.name;
+      
+      // Only update password if provided and valid
+      if (!string.IsNullOrEmpty(request.password)) {
+        if (request.password.Length < 5) {
+          throw new ArgumentException("Password must be at least 5 characters");
+        }
+        student.password = BCrypt.Net.BCrypt.HashPassword(request.password);
+      }
+
+      // Only update role specific fields if necessary or allowed
+      // For now we only allow name and password update
+
+      return await studentRepository.update(student) > 0;
     }
   }
 }
