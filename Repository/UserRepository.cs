@@ -11,7 +11,6 @@ namespace GradeManagement.Repository
     {
     }
 
-    // Custom method to get user by username using EF Core LINQ
     public async Task<User?> getUserByUsername(string username)
     {
       return await _dbSet.FirstOrDefaultAsync(u => u.username == username);

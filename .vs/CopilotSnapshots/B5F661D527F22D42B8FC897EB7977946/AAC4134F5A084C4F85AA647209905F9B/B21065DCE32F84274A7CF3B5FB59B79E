@@ -1,0 +1,27 @@
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace GradeManagement.Entity {
+  [Table("result")]
+  public class Result {
+    [ForeignKey("Student")]
+    public string sid { get; set; }
+    
+    [ForeignKey("Course")]
+    public string cid { get; set; }
+    
+    public float grade { get; set; }
+
+    // Navigation properties
+    public virtual Student Student { get; set; }
+    public virtual Course Course { get; set; }
+
+    public Result() { }
+
+    public Result(string sid, string cid, float grade) {
+      this.sid = sid;
+      this.cid = cid;
+      this.grade = grade;
+    }
+  }
+}

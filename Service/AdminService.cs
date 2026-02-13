@@ -13,7 +13,7 @@ namespace GradeManagement.Service {
       this.studentRepository = studentRepository;
       this.resultRepository = resultRepository;
     }
-    public async Task<int> addCourse (string Cid, string Cname) {
+    public async Task<int> addCourse (string cid, string cname) {
       throw new NotImplementedException ();
     }
     public async Task<int> importCourseFromFile (string filePath) {

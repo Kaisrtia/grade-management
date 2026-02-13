@@ -3,27 +3,112 @@
   "WorkspaceRootPath": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\entity.cs\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:entity.cs\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\service\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:service\\adminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\entity.cs\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:entity.cs\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\serviceinterface\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:serviceinterface\\iadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\entity.cs\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:entity.cs\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\serviceinterface\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:serviceinterface\\istudentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\entity.cs\\fmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:entity.cs\\fmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\serviceinterface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:serviceinterface\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{218B63B7-CE2F-428C-9647-5263B699075C}|Solution Items{218B63B7-CE2F-428C-9647-5263B699075C}|C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\.editorconfig||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{218B63B7-CE2F-428C-9647-5263B699075C}|Solution Items{218B63B7-CE2F-428C-9647-5263B699075C}|solutionrelative:.editorconfig||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\serviceinterface\\ifmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:serviceinterface\\ifmanagerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\HOANG TRUNG\\AppData\\Local\\Microsoft\\VisualStudio\\18.0_1760d570\\settings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\studentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\facultydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\facultydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\enrollmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\enrollmentdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\coursedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\fmanagerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\fmanagerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\resultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\resultdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\response\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\response\\userresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\request\\studentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\request\\studentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\request\\courserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\request\\courserequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\response\\fmanagerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\response\\fmanagerresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\response\\resultresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\response\\resultresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\response\\courseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\response\\courseresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\request\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\request\\userrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\request\\facultyrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\request\\facultyrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\request\\fmanagerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\request\\fmanagerrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\request\\resultrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\request\\resultrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\request\\adminrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\request\\adminrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\response\\adminresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\response\\adminresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\response\\studentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\response\\studentresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\response\\facultyresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\response\\facultyresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|c:\\users\\hoang trung\\desktop\\project github\\grade-management\\dto\\request\\enrollmentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F416F9E8-E7C1-31A8-E0CE-9DB1101C8097}|GradeManagement.csproj|solutionrelative:dto\\request\\enrollmentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -33,80 +118,357 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 25,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\Entity.cs\\User.cs",
-              "RelativeDocumentMoniker": "Entity.cs\\User.cs",
-              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\Entity.cs\\User.cs",
-              "RelativeToolTip": "Entity.cs\\User.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAA7wCwAAAABAAAAAAAAAA==",
+              "DocumentIndex": 26,
+              "Title": "EnrollmentRequest.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\EnrollmentRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\Request\\EnrollmentRequest.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\EnrollmentRequest.cs",
+              "RelativeToolTip": "DTO\\Request\\EnrollmentRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T09:49:45.681Z",
+              "WhenOpened": "2026-02-13T11:17:06.088Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "FacultyResponse.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Response\\FacultyResponse.cs",
+              "RelativeDocumentMoniker": "DTO\\Response\\FacultyResponse.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Response\\FacultyResponse.cs",
+              "RelativeToolTip": "DTO\\Response\\FacultyResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:17:06.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "StudentResponse.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Response\\StudentResponse.cs",
+              "RelativeDocumentMoniker": "DTO\\Response\\StudentResponse.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Response\\StudentResponse.cs",
+              "RelativeToolTip": "DTO\\Response\\StudentResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:17:05.891Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "AdminResponse.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Response\\AdminResponse.cs",
+              "RelativeDocumentMoniker": "DTO\\Response\\AdminResponse.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Response\\AdminResponse.cs",
+              "RelativeToolTip": "DTO\\Response\\AdminResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:17:05.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AdminRequest.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\AdminRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\Request\\AdminRequest.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\AdminRequest.cs",
+              "RelativeToolTip": "DTO\\Request\\AdminRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:17:05.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ResultRequest.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\ResultRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\Request\\ResultRequest.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\ResultRequest.cs",
+              "RelativeToolTip": "DTO\\Request\\ResultRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:17:05.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FManagerRequest.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\FManagerRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\Request\\FManagerRequest.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\FManagerRequest.cs",
+              "RelativeToolTip": "DTO\\Request\\FManagerRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:17:05.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "FacultyRequest.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\FacultyRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\Request\\FacultyRequest.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\FacultyRequest.cs",
+              "RelativeToolTip": "DTO\\Request\\FacultyRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:17:05.386Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UserRequest.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\UserRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\Request\\UserRequest.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\UserRequest.cs",
+              "RelativeToolTip": "DTO\\Request\\UserRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:17:05.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "CourseResponse.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Response\\CourseResponse.cs",
+              "RelativeDocumentMoniker": "DTO\\Response\\CourseResponse.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Response\\CourseResponse.cs",
+              "RelativeToolTip": "DTO\\Response\\CourseResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:17:05.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ResultResponse.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Response\\ResultResponse.cs",
+              "RelativeDocumentMoniker": "DTO\\Response\\ResultResponse.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Response\\ResultResponse.cs",
+              "RelativeToolTip": "DTO\\Response\\ResultResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:17:05.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FManagerResponse.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Response\\FManagerResponse.cs",
+              "RelativeDocumentMoniker": "DTO\\Response\\FManagerResponse.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Response\\FManagerResponse.cs",
+              "RelativeToolTip": "DTO\\Response\\FManagerResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:17:05.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CourseRequest.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\CourseRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\Request\\CourseRequest.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\CourseRequest.cs",
+              "RelativeToolTip": "DTO\\Request\\CourseRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:17:04.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "StudentRequest.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\StudentRequest.cs",
+              "RelativeDocumentMoniker": "DTO\\Request\\StudentRequest.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Request\\StudentRequest.cs",
+              "RelativeToolTip": "DTO\\Request\\StudentRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:17:04.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UserResponse.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Response\\UserResponse.cs",
+              "RelativeDocumentMoniker": "DTO\\Response\\UserResponse.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\Response\\UserResponse.cs",
+              "RelativeToolTip": "DTO\\Response\\UserResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:17:04.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ResultDTO.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\ResultDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\ResultDTO.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\ResultDTO.cs",
+              "RelativeToolTip": "DTO\\ResultDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:14:42.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "FManagerDTO.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\FManagerDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\FManagerDTO.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\FManagerDTO.cs",
+              "RelativeToolTip": "DTO\\FManagerDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:14:42.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CourseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\CourseDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\CourseDTO.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\CourseDTO.cs",
+              "RelativeToolTip": "DTO\\CourseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:14:42.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EnrollmentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\EnrollmentDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\EnrollmentDTO.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\EnrollmentDTO.cs",
+              "RelativeToolTip": "DTO\\EnrollmentDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:14:42.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\UserDTO.cs",
+              "RelativeToolTip": "DTO\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:14:42.592Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FacultyDTO.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\FacultyDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\FacultyDTO.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\FacultyDTO.cs",
+              "RelativeToolTip": "DTO\\FacultyDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:14:42.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "StudentDTO.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\StudentDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\StudentDTO.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\DTO\\StudentDTO.cs",
+              "RelativeToolTip": "DTO\\StudentDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:14:42.426Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\ServiceInterface\\IUserService.cs",
+              "RelativeDocumentMoniker": "ServiceInterface\\IUserService.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\ServiceInterface\\IUserService.cs",
+              "RelativeToolTip": "ServiceInterface\\IUserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:07:17.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IStudentService.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\ServiceInterface\\IStudentService.cs",
+              "RelativeDocumentMoniker": "ServiceInterface\\IStudentService.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\ServiceInterface\\IStudentService.cs",
+              "RelativeToolTip": "ServiceInterface\\IStudentService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-13T11:07:07.146Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": ".editorconfig",
-              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\.editorconfig",
-              "RelativeDocumentMoniker": ".editorconfig",
-              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\.editorconfig",
-              "RelativeToolTip": ".editorconfig",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-02-04T09:07:58.83Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "settings.json",
-              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\AppData\\Local\\Microsoft\\VisualStudio\\18.0_1760d570\\settings.json",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Microsoft\\VisualStudio\\18.0_1760d570\\settings.json",
-              "ToolTip": "C:\\Users\\HOANG TRUNG\\AppData\\Local\\Microsoft\\VisualStudio\\18.0_1760d570\\settings.json",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Microsoft\\VisualStudio\\18.0_1760d570\\settings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-04T08:57:01.526Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FManager.cs",
-              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\Entity.cs\\FManager.cs",
-              "RelativeDocumentMoniker": "Entity.cs\\FManager.cs",
-              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\Entity.cs\\FManager.cs",
-              "RelativeToolTip": "Entity.cs\\FManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
+              "Title": "IFManagerService.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\ServiceInterface\\IFManagerService.cs",
+              "RelativeDocumentMoniker": "ServiceInterface\\IFManagerService.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\ServiceInterface\\IFManagerService.cs",
+              "RelativeToolTip": "ServiceInterface\\IFManagerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T08:51:42.057Z"
+              "WhenOpened": "2026-02-13T11:06:55.506Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\Entity.cs\\Course.cs",
-              "RelativeDocumentMoniker": "Entity.cs\\Course.cs",
-              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\Entity.cs\\Course.cs",
-              "RelativeToolTip": "Entity.cs\\Course.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AdminService.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\Service\\AdminService.cs",
+              "RelativeDocumentMoniker": "Service\\AdminService.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\Service\\AdminService.cs",
+              "RelativeToolTip": "Service\\AdminService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBAAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T08:51:19.281Z"
+              "WhenOpened": "2026-02-13T11:06:43.251Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\Entity.cs\\Admin.cs",
-              "RelativeDocumentMoniker": "Entity.cs\\Admin.cs",
-              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\Entity.cs\\Admin.cs",
-              "RelativeToolTip": "Entity.cs\\Admin.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Title": "IAdminService.cs",
+              "DocumentMoniker": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\ServiceInterface\\IAdminService.cs",
+              "RelativeDocumentMoniker": "ServiceInterface\\IAdminService.cs",
+              "ToolTip": "C:\\Users\\HOANG TRUNG\\Desktop\\Project Github\\grade-management\\ServiceInterface\\IAdminService.cs",
+              "RelativeToolTip": "ServiceInterface\\IAdminService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T08:47:11.392Z",
+              "WhenOpened": "2026-02-13T10:47:13.229Z",
               "EditorCaption": ""
             }
           ]

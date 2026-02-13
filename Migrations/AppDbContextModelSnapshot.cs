@@ -35,6 +35,21 @@ namespace GradeManagement.Migrations
                     b.ToTable("course", (string)null);
                 });
 
+            modelBuilder.Entity("GradeManagement.Entity.Faculty", b =>
+                {
+                    b.Property<string>("id")
+                        .HasColumnType("varchar(255)");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("varchar(50)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("faculty", (string)null);
+                });
+
             modelBuilder.Entity("GradeManagement.Entity.Result", b =>
                 {
                     b.Property<string>("sid")
@@ -48,14 +63,15 @@ namespace GradeManagement.Migrations
 
                     b.HasKey("sid", "cid");
 
+                    b.HasIndex("cid");
+
                     b.ToTable("result", (string)null);
                 });
 
             modelBuilder.Entity("GradeManagement.Entity.User", b =>
                 {
                     b.Property<string>("id")
-                        .HasMaxLength(50)
-                        .HasColumnType("varchar(50)");
+                        .HasColumnType("varchar(255)");
 
                     b.Property<string>("name")
                         .IsRequired()
@@ -96,7 +112,9 @@ namespace GradeManagement.Migrations
 
                     b.Property<string>("fid")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("varchar(255)");
+
+                    b.HasIndex("fid");
 
                     b.ToTable("fManager", (string)null);
                 });
@@ -107,9 +125,30 @@ namespace GradeManagement.Migrations
 
                     b.Property<string>("fid")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasColumnType("varchar(255)");
+
+                    b.HasIndex("fid");
 
                     b.ToTable("student", (string)null);
+                });
+
+            modelBuilder.Entity("GradeManagement.Entity.Result", b =>
+                {
+                    b.HasOne("GradeManagement.Entity.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("cid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("GradeManagement.Entity.Student", "Student")
+                        .WithMany()
+                        .HasForeignKey("sid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("Student");
                 });
 
             modelBuilder.Entity("GradeManagement.Entity.Admin", b =>
@@ -123,20 +162,36 @@ namespace GradeManagement.Migrations
 
             modelBuilder.Entity("GradeManagement.Entity.FManager", b =>
                 {
+                    b.HasOne("GradeManagement.Entity.Faculty", "Faculty")
+                        .WithMany()
+                        .HasForeignKey("fid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("GradeManagement.Entity.User", null)
                         .WithOne()
                         .HasForeignKey("GradeManagement.Entity.FManager", "id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Faculty");
                 });
 
             modelBuilder.Entity("GradeManagement.Entity.Student", b =>
                 {
+                    b.HasOne("GradeManagement.Entity.Faculty", "Faculty")
+                        .WithMany()
+                        .HasForeignKey("fid")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("GradeManagement.Entity.User", null)
                         .WithOne()
                         .HasForeignKey("GradeManagement.Entity.Student", "id")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Faculty");
                 });
 #pragma warning restore 612, 618
         }
