@@ -1,49 +1,33 @@
 ﻿using GradeManagement.Entity;
 using GradeManagement.Service;
 using GradeManagement.Config;
-using MySql.Data.MySqlClient;
 using GradeManagement.Repository;
+using GradeManagement.DTO.Request;
 using System.Windows.Forms;
-using Microsoft.EntityFrameworkCore; // For Migrate() method
+using Microsoft.EntityFrameworkCore;
 
-namespace GradeManagement // Namespace is usually recommended for WinForms
+namespace GradeManagement
 {
   internal static class Program
   {
-    /// <summary>
-    ///  The main entry point for the application.
-    /// </summary>
-    [STAThread] // Required for WinForms
+    [STAThread]
     static void Main()
     {
-      // Initialize Entity Framework Core DbContext and apply migrations
+      // Initialize database and create default admin
       using (var context = new AppDbContext())
       {
-        try
+        context.Database.Migrate();
+        var authenticationService = new AuthenticationService(context, new IdGeneratorService(context));
+        var loginRequest = new LoginRequestDTO { username = "admin", password = "admin" };
+        var loginResponse = authenticationService.Login(loginRequest);
+        
+        if (loginResponse != null)
         {
-          // Apply pending migrations (creates database if not exists, updates schema if needed)
-          context.Database.Migrate();
-          
-          MessageBox.Show(
-            "Database initialized successfully!\n\n" +
-            "All migrations have been applied.",
-            "Success",
-            MessageBoxButtons.OK,
-            MessageBoxIcon.Information);
-        }
-        catch (Exception ex)
-        {
-          MessageBox.Show(
-            $"Database initialization failed!\n\n" +
-            $"Error: {ex.Message}\n\n" +
-            $"Stack Trace:\n{ex.StackTrace}\n\n" +
-            $"Inner Exception: {ex.InnerException?.Message}",
-            "Error",
-            MessageBoxButtons.OK,
-            MessageBoxIcon.Error);
+            MessageBox.Show($"Login successful: {loginResponse.Result.message}");
         }
       }
 
+      // Start WinForms application
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
       Application.Run(new MainForm());

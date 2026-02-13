@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace GradeManagement.Service
 {
-  public class IdGeneratorService : IIdGenerator
+  public class IdGeneratorService : IIdGeneratorService
   {
     private readonly AppDbContext _context;
 

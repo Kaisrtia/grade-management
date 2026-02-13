@@ -17,6 +17,14 @@ namespace GradeManagement.Repository
         .ToListAsync();
     }
 
+    public async Task<IEnumerable<Result>> getResultsByStudent(string sid) {
+      return await _dbSet
+        .Include(r => r.Student)
+        .Include(r => r.Course)
+        .Where(r => r.sid == sid)
+        .ToListAsync();
+    }
+
     // Note: Result has composite key (sid, cid) so getById won't work
     // You may need to add custom methods like getResultByStudentAndCourse
   }

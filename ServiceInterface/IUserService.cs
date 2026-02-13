@@ -1,8 +1,9 @@
-﻿using GradeManagement.Entity;
+﻿using GradeManagement.DTO.Request;
+using GradeManagement.DTO.Response;
 using System.Threading.Tasks;
 
 namespace GradeManagement.ServiceInterface {
   internal interface IUserService {
-    Task<bool> changeInfo(User user);
+    Task<UserResponseDTO> changeInfo(UserChangeInfoRequestDTO request);
   }
 }

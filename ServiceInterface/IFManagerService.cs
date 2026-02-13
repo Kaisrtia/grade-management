@@ -1,5 +1,8 @@
-﻿namespace GradeManagement.ServiceInterface {
+﻿using GradeManagement.DTO.Request;
+using GradeManagement.DTO.Response;
+
+namespace GradeManagement.ServiceInterface {
   internal interface IFManagerService {
-    Task<int> updateResult (string Sid, string Cid, float grade);
+    Task<ResultResponseDTO> updateResult (ResultRequestDTO request);
   }
 }

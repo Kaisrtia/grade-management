@@ -1,6 +1,6 @@
 namespace GradeManagement.ServiceInterface
 {
-  public interface IIdGenerator
+  public interface IIdGeneratorService
   {
     Task<string> GenerateFacultyId(string facultyName);
     Task<string> GenerateAdminId();

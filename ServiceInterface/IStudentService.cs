@@ -1,7 +1,7 @@
-﻿using GradeManagement.Entity;
+﻿using GradeManagement.DTO.Response;
 
 namespace GradeManagement.ServiceInterface {
   internal interface IStudentService {
-    Task<IEnumerable<Result>> showResult (string Id);
+    Task<IEnumerable<ResultResponseDTO>> showResult (string Id);
   }
 }

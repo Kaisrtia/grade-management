@@ -10,9 +10,9 @@ namespace GradeManagement.Service
   public class AuthenticationService : IAuthenticationService
   {
     private readonly AppDbContext _context;
-    private readonly IIdGenerator _idGenerator;
+    private readonly IIdGeneratorService _idGenerator;
 
-    public AuthenticationService(AppDbContext context, IIdGenerator idGenerator)
+    public AuthenticationService(AppDbContext context, IIdGeneratorService idGenerator)
     {
       _context = context;
       _idGenerator = idGenerator;
