@@ -8,13 +8,13 @@ namespace GradeManagement.Entity
     public virtual Faculty Faculty { get; set; }
     
     [ForeignKey("faculty")]
-    public string fid { get; set; }
+    public string? fid { get; set; }
 
     public Student() { 
       role = Role.STUDENT;
     }
 
-    public Student (string id, string name, string username, string password, string fid)
+    public Student (string id, string name, string username, string password, string? fid)
       : base(id, name, username, password, Role.STUDENT) {
       this.fid = fid;
     }

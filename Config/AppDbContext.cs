@@ -47,17 +47,25 @@ namespace GradeManagement.Config
 
       modelBuilder.Entity<Student>()
         .ToTable("student")
-        .HasBaseType<User>()
-        .HasOne(f => f.Faculty)
+        .HasBaseType<User>();
+      
+      modelBuilder.Entity<Student>()
+        .HasOne(s => s.Faculty)
         .WithMany()
-        .HasForeignKey("fid");
+        .HasForeignKey(s => s.fid)
+        .OnDelete(DeleteBehavior.SetNull)
+        .IsRequired(false);
 
       modelBuilder.Entity<FManager>()
         .ToTable("fManager")
-        .HasBaseType<User>()
-        .HasOne(f => f.Faculty)
+        .HasBaseType<User>();
+      
+      modelBuilder.Entity<FManager>()
+        .HasOne(fm => fm.Faculty)
         .WithMany()
-        .HasForeignKey("fid");
+        .HasForeignKey(fm => fm.fid)
+        .OnDelete(DeleteBehavior.SetNull)
+        .IsRequired(false);
 
       modelBuilder.Entity<Admin>()
         .ToTable("admin")
