@@ -13,24 +13,24 @@ namespace GradeManagement
     [STAThread]
     static void Main()
     {
-      // Initialize database and create default admin
+      // Initialize database
       using (var context = new AppDbContext())
       {
         context.Database.Migrate();
-        var authenticationService = new AuthenticationService(context, new IdGeneratorService(context));
-        var loginRequest = new LoginRequestDTO { username = "admin", password = "admin" };
-        var loginResponse = authenticationService.Login(loginRequest);
-        
-        if (loginResponse != null)
-        {
-            MessageBox.Show($"Login successful: {loginResponse.Result.message}");
-        }
       }
 
       // Start WinForms application
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
-      Application.Run(new MainForm());
+      
+      // Show login form first
+      var loginForm = new LoginForm();
+      if (loginForm.ShowDialog() == DialogResult.OK)
+      {
+        // Login successful, open main form
+        Application.Run(new MainForm(loginForm.LoggedInUser));
+      }
+      // If login cancelled or failed, application exits
     }
   }
 }
