@@ -2,3 +2,7 @@ bin/
 obj/
 *.user
 *.suo
+build_errors.txt
+build_output.txt
+.editorconfig
+.vs
