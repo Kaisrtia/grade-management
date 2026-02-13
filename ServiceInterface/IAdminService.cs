@@ -8,5 +8,7 @@ namespace GradeManagement.ServiceInterface {
     Task<ImportCoursesResponseDTO> importCourseFromFile(string filePath);
 
     Task<EnrollmentResponseDTO> addStudentToCourse(EnrollmentRequestDTO request);
+
+    Task<FacultyResponseDTO> addFaculty(FacultyRequestDTO request);
   }
 }

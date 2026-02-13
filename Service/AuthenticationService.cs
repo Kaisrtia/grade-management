@@ -90,5 +90,97 @@ namespace GradeManagement.Service
     }
 
     #endregion
+
+    #region Register Faculty Manager
+
+    public async Task<AuthResponseDTO> RegisterFManager(RegisterFManagerRequestDTO request)
+    {
+      try
+      {
+        // Check if username already exists
+        var existingUser = await _context.Users
+          .FirstOrDefaultAsync(u => u.username == request.username);
+
+        if (existingUser != null)
+        {
+          return new AuthResponseDTO(false, "Username already exists");
+        }
+
+        // Validate faculty exists
+        var faculty = await _context.Faculties.FindAsync(request.facultyId);
+        if (faculty == null)
+        {
+          return new AuthResponseDTO(false, $"Faculty with ID '{request.facultyId}' does not exist");
+        }
+
+        // Generate ID
+        string fManagerId = await _idGenerator.GenerateFManagerId();
+
+        // Hash password
+        string hashedPassword = BCrypt.Net.BCrypt.HashPassword(request.password);
+
+        // Create faculty manager entity
+        var fManager = new FManager(fManagerId, request.name, request.username, hashedPassword, request.facultyId);
+
+        // Save to database
+        _context.FManagers.Add(fManager);
+        await _context.SaveChangesAsync();
+
+        // Return success response
+        return new AuthResponseDTO(true, "Faculty Manager registered successfully", fManager);
+      }
+      catch (Exception ex)
+      {
+        return new AuthResponseDTO(false, $"Registration failed: {ex.Message}");
+      }
+    }
+
+    #endregion
+
+    #region Register Student
+
+    public async Task<AuthResponseDTO> RegisterStudent(RegisterStudentRequestDTO request)
+    {
+      try
+      {
+        // Check if username already exists
+        var existingUser = await _context.Users
+          .FirstOrDefaultAsync(u => u.username == request.username);
+
+        if (existingUser != null)
+        {
+          return new AuthResponseDTO(false, "Username already exists");
+        }
+
+        // Validate faculty exists
+        var faculty = await _context.Faculties.FindAsync(request.facultyId);
+        if (faculty == null)
+        {
+          return new AuthResponseDTO(false, $"Faculty with ID '{request.facultyId}' does not exist");
+        }
+
+        // Generate ID
+        string studentId = await _idGenerator.GenerateStudentId(request.facultyId);
+
+        // Hash password
+        string hashedPassword = BCrypt.Net.BCrypt.HashPassword(request.password);
+
+        // Create student entity
+        var student = new Student(studentId, request.name, request.username, hashedPassword, request.facultyId);
+
+        // Save to database
+        _context.Students.Add(student);
+        await _context.SaveChangesAsync();
+
+        // Return success response
+        return new AuthResponseDTO(true, "Student registered successfully", student);
+      }
+      catch (Exception ex)
+      {
+        return new AuthResponseDTO(false, $"Registration failed: {ex.Message}");
+      }
+    }
+
+    #endregion
   }
 }

@@ -11,22 +11,21 @@ namespace GradeManagement.Service {
     IUserRepository userRepository = null!;
     IStudentRepository studentRepository = null!;
     IResultRepository resultRepository = null!;
+    IIdGeneratorService idGeneratorService = null!;
 
-    public AdminService (ICourseRepository courseRepository, IUserRepository userRepository, IStudentRepository studentRepository, IResultRepository resultRepository) {
+    public AdminService (ICourseRepository courseRepository, IUserRepository userRepository, IStudentRepository studentRepository, IResultRepository resultRepository, IIdGeneratorService idGeneratorService) {
       this.courseRepository = courseRepository;
       this.userRepository = userRepository;
       this.studentRepository = studentRepository;
       this.resultRepository = resultRepository;
+      this.idGeneratorService = idGeneratorService;
     }
 
     public async Task<CourseResponseDTO> addCourse(CourseRequestDTO request) {
-      // Validate course doesn't already exist
-      var existingCourse = await courseRepository.getById(request.id);
-      if (existingCourse != null) {
-        throw new InvalidOperationException($"Course with ID '{request.id}' already exists");
-      }
+      // Auto-generate course ID
+      string courseId = await idGeneratorService.GenerateCourseId();
 
-      Course course = new Course(request.id, request.name);
+      Course course = new Course(courseId, request.name);
       await courseRepository.create(course);
       
       return new CourseResponseDTO(course);
@@ -115,6 +114,28 @@ namespace GradeManagement.Service {
       await resultRepository.create(enrollment);
 
       return new EnrollmentResponseDTO(enrollment, "Student enrolled successfully");
+    }
+
+    public async Task<FacultyResponseDTO> addFaculty(FacultyRequestDTO request) {
+      // Auto-generate faculty ID
+      string facultyId = await idGeneratorService.GenerateFacultyId(request.name);
+
+      Faculty faculty = new Faculty(facultyId, request.name);
+      
+      // We need to use the context directly since there's no FacultyRepository
+      // This is a temporary solution - ideally we should have a FacultyRepository
+      var context = courseRepository.GetType().GetField("_context", 
+        System.Reflection.BindingFlags.NonPublic | System.Reflection.BindingFlags.Instance)
+        ?.GetValue(courseRepository) as GradeManagement.Config.AppDbContext;
+      
+      if (context == null) {
+        throw new InvalidOperationException("Unable to access database context");
+      }
+
+      context.Faculties.Add(faculty);
+      await context.SaveChangesAsync();
+      
+      return new FacultyResponseDTO { id = faculty.id, name = faculty.name };
     }
   }
 }
