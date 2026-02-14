@@ -1,39 +1,35 @@
-﻿using GradeManagement.Entity;
-using GradeManagement.Service;
-using GradeManagement.Config;
-using GradeManagement.Repository;
-using GradeManagement.DTO.Request;
-using GradeManagement.Forms;
+﻿using System.Threading.Tasks;
 using System.Windows.Forms;
+using GradeManagement.Config;
+using GradeManagement.DTO.Request;
+using GradeManagement.DTO.Response;
+using GradeManagement.Entity;
+using GradeManagement.Forms;
+using GradeManagement.Repository;
+using GradeManagement.Service;
 using Microsoft.EntityFrameworkCore;
 
-namespace GradeManagement
-{
-  internal static class Program
-  {
+namespace GradeManagement {
+  internal static class Program {
     [STAThread]
-    static void Main()
-    {
+    static async Task Main() {
       // Initialize database
-      using (var context = new AppDbContext())
-      {
+      using (var context = new AppDbContext()) {
         context.Database.Migrate();
       }
 
       // Start WinForms application
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
-      
+
       // Show login form first
       var loginForm = new LoginForm();
-      if (loginForm.ShowDialog() == DialogResult.OK)
-      {
+      if (loginForm.ShowDialog() == DialogResult.OK) {
         // Login successful, route based on role
         User loggedInUser = loginForm.LoggedInUser;
-        
         Form mainForm;
-        switch (loggedInUser.role)
-        {
+
+        switch (loggedInUser.role) {
           case Role.ADMIN:
             mainForm = new AdminMenuForm(loggedInUser);
             break;
@@ -47,7 +43,7 @@ namespace GradeManagement
             mainForm = new MainForm(loggedInUser);
             break;
         }
-        
+
         Application.Run(mainForm);
       }
       // If login cancelled or failed, application exits
